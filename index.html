@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fav-Books</title>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="utilities.js"></script>
+</head>
+<body>
+    <table border="1" id="books">
+    </table>
     <script>
         const { createClient } = supabase
         const supabaseUrl = 'https://wqtvclmwjxsvcwhacqoo.supabase.co'
@@ -24,10 +29,5 @@
 
             getbooks();
     </script>
-    <script src="utilities.js"></script>
-</head>
-<body>
-    <table border="1" id="books">
-    </table>
 </body>
 </html>
